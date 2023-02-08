@@ -3,3 +3,26 @@
     font-family: "Royal Bold";
     src: url('/fonts/Lobster/Lobster-Regular.ttf');
 }
+
+/* Poppins */
+@font-face{
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-ExtraLight.ttf');
+    font-weight: 200;
+}
+@font-face{
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face{
+    font-family: Poppins;
+    src: url('/fonts/Poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+/* Dancing Script */
+@font-face{
+    font-family: "Cursive Handwriting";
+    src: url('/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf');
+}
