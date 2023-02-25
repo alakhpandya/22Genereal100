@@ -1,0 +1,68 @@
+<!-- 
+    HW:
+    Set background image covering entire viewport,
+    Put an h1 with lorem11,
+    Put a paragraph with lorem1000,
+    change the font-size, font-color etc to make it as beautiful as possible but,
+    the primary goal is that All the text should be clearly readable.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    .box{
+        border: solid;
+    }
+    /* Position */
+    #btn1{
+        position: static;
+        /* 
+        1. With position static, we cannot use top, left, bottom or right 
+        2. When we set position to any other position than static, we take the element out of the parent & now we can move it anywhere as per that position's rules
+        */
+    }
+    #btn2{
+        position: relative;
+        /* 
+        The element can be moved anywhere with respect to its original position
+        */
+        /* 
+        top, left, bottom & right are now unlocked 
+        */
+        
+        /* bottom: 10px;
+        left: 20px;  */
+       
+        /* top: 10px;
+        right: 15px; */
+    }
+
+    #btn4{
+        border: green solid;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+    }
+ </style>
+ <body>
+    <br><br><br><br>
+    <div class="box">
+        <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="btn1">Static</button>
+        <button id="btn2">Relative</button>
+        <button id="btn3">Absolute</button>
+        <button id="btn3">Test</button> <br><br>
+        <div id="btn4">Fixed</div> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="btn5">Sticky</button> <br><br><br><br>
+    </div>
+ </body>
+ </html>
+ <!-- 
+    Next Class: More about position 'relative' and other positions, check hw
+  -->
