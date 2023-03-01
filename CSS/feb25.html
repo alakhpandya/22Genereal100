@@ -22,7 +22,7 @@
     }
     .box {
         border: solid;
-        position: relative;
+        /* position: relative;  */
     }
 
     /* Position */
@@ -57,10 +57,14 @@
     }
 
     #btn4 {
-        border: green solid;
-        width: 100px;
+        background-color: green;
+        color: white;
+        width: 100vw;
         height: 30px;
         text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
     }
 
     /*
@@ -77,13 +81,17 @@
     }
     #test-btn{
         position: fixed;
-        top: 10px;
+        /* Converts the element into inline */
+        top: 50px;
         right: 20px;
     }
     #absolute{
         position: absolute;
         top: 10px;
         left: 20px;
+    }
+    #btn5{
+        position: sticky;
     }
 </style>
 
@@ -99,9 +107,10 @@
             <button id="btn2">Relative</button>
             <button id="btn3">Absolute</button>
             <button id="test-btn">Test</button> <br><br>
-            <div id="btn4">Fixed</div> <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button id="btn5">Sticky</button> <br><br><br><br>
+            <div id="btn4">Fixed</div> 
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+            <button id="btn5">Sticky</button> 
+            <!-- <br><br><br><br> -->
         </div> <br> <br> <br>
         <button id="btn6">Close</button>
     </div>
