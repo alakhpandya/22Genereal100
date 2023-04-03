@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.navbar{
+    background-color: #1A242F;
+    height: 4.5rem;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-left .brand-logo{
+    height: 2.5rem;
+}
+.nav-link{
+    color: white;
+}
+
+.nav-right{
+    background-color: green;
+    height: 2rem;
+}

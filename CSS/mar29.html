@@ -13,11 +13,11 @@
         box-sizing: border-box;
     }
     .parent-box{
-        height: 100vh;
+        /* height: 100vh; */
         border: red solid;
         display: flex;
         /* flex-direction: row;    default */
-        flex-direction: column;
+        /* flex-direction: column; */
         /* flex-direction: row-reverse; */
         /* flex-direction: column-reverse; */
         
@@ -33,22 +33,25 @@
 
     .boxes {
         border: solid;
-        width: 150px;
-        height: 150px;
+        /* width: 150px; */
+        /* height: 150px; */
+        flex-basis: 150px;
     }
     #box1{
         /* flex-shrink: 1;     default */
-        flex-shrink: 0;
+        /* flex-shrink: 0; */
+        /* order: 2; */
     }
     #box2{
-        flex-shrink: 2;
+        /* flex-shrink: 2; */
         /* 60px shrink
             new width: 90px
         */
+        /* order: 1; */
     }
     #box3{
-        flex-shrink: 3;
-        flex-grow: 3;
+        /* flex-shrink: 3; */
+        /* flex-grow: 3; */
         /* 
         shrink: 90px
         new width: 60px
@@ -56,20 +59,20 @@
     }
     #box4{
         /* flex-grow: 0;   default */
-        flex-grow: 1;
+        /* flex-grow: 1; */
     }
     #box5{
-        flex-grow: 2;
+        /* flex-grow: 2; */
     }
     /* 
     current width of 4, 5, 6, 7: 120px
     */
 
     #box6{
-        align-self: center;
+        /* align-self: center; */
     }
     #box7{
-        align-self: flex-end;
+        /* align-self: flex-end; */
     }
 
 
