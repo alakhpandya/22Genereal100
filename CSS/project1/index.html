@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,7 +14,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar-bg">
         <ul class="nav-left">
             <li><a href="#" class="nav-link">
                 <img class="brand-logo" src="/images/logo.png" alt="">
@@ -50,6 +50,55 @@
             </div>
         </div>
     </div>
+
+    <div class="navbar-sm">
+        <div class="nav-upper">
+            <a href="#" class="nav-link">
+                <img class="brand-logo" src="/images/logo.png" alt="">
+            </a>
+            <div class="nav-right">
+                <a onclick="document.querySelector('.navbar-sm').classList.toggle('nav-expand')" href="#" class="nav-link">
+                    Browse
+                    <i class="fa-solid fa-caret-down"></i>
+                </a>
+                <div class="nav-item">
+                    <a href="#" class="btn">Try for free</a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-right-links" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-right-links" href="#">
+                        <i class="fa-solid fa-globe"></i>
+                        EN
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-right-links" href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="nav-vertical">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">Store</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">Channels</a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">
+                Categories
+                <i class="fa-solid fa-caret-right"></i>
+            </a></li>
+            <hr class="seperator">
+            <li><a href="#" class="nav-link">My Stuff</a></li>
+        </ul>
+    </div>
+    <i class="fa-solid fa-bars bar-icon"></i>
+
 </body>
 <!-- Fontawesome JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
