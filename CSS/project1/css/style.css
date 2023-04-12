@@ -22,7 +22,7 @@ ul{
     background-color: #82c123;
 }
 
-.navbar-sm, .navbar-bg{
+.navbar-sm, .navbar-bg, .navbar-mobile{
     background-color: #1A242F;
     height: 4.5rem;
 }
@@ -32,7 +32,7 @@ ul{
     justify-content: space-between;
     align-items: center;
 }
-.navbar-sm{
+.navbar-sm, .navbar-mobile{
     display: none;
     overflow: hidden;
     transition: 0.5s;
@@ -84,9 +84,12 @@ ul{
 .nav-expand{
     height: 25rem;
 }
+.nav-mobile-expand{
+    height: 41rem;
+}
 
 /* Media Queries */
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){
     .navbar-bg{
         display: none;
     }
@@ -94,3 +97,15 @@ ul{
         display: block;
     }
 }
+
+@media (max-width: 650px){
+    .navbar-sm{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+    }
+    .bar-icon{
+        display: block;
+    }
+} */
