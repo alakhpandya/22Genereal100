@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Sofia+Sans+Condensed:wght@600;700;800&display=swap');
+
+/* 
+font-family: 'Kanit', sans-serif;
+font-family: 'Sofia Sans Condensed', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --title-fonts: 'Sofia Sans Condensed', sans-serif;
+    --normal-fonts: 'Kanit', sans-serif;
+    --dark-col1: ;
+    --dark-col2: ;
+    --light-col1: ;
+    --light-col2: ;
+}
+/* A tool to help people like me who are poor in color combinations */
