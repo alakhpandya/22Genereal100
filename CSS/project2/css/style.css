@@ -14,9 +14,57 @@ font-family: 'Sofia Sans Condensed', sans-serif;
 :root{
     --title-fonts: 'Sofia Sans Condensed', sans-serif;
     --normal-fonts: 'Kanit', sans-serif;
-    --dark-col1: ;
-    --dark-col2: ;
-    --light-col1: ;
-    --light-col2: ;
+    --dark-col1: #3C486B;
+    --dark-col2: #F45050;
+    --light-col1: #F0F0F0;
+    --light-col2: #F9D949;
 }
-/* A tool to help people like me who are poor in color combinations */
+
+/* ----------------- Global Classes ----------------- */
+body{
+    font-family: var(--normal-fonts);
+    background-color: var(--light-col1);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+/* ----------------- Navbar ----------------- */
+nav{
+    height: 5rem;
+    background-color: var(--dark-col1);
+    padding: 0 25px;
+    color: var(--light-col1);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav-toggle{
+    height: 24rem;
+}
+.upper-nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo{
+    height: 4rem;
+}
+.bar-icon{
+    font-size: 1.5rem;
+}
+
+
+.nav-menu li{
+    margin: 1.5rem 0;
+}
+.nav-links{
+    color: var(--light-col1);
+    font-size: 1.2rem;
+}
