@@ -63,8 +63,78 @@ nav{
 
 .nav-menu li{
     margin: 1.5rem 0;
+    position: relative;
+    padding: 0.2rem 0.6rem;
 }
 .nav-links{
     color: var(--light-col1);
     font-size: 1.2rem;
+    transition: 0.4s;
+}
+.nav-links:hover{
+    color: var(--dark-col2);
+}
+
+/* ----------------- Navlinks borders ----------------- */
+
+.topline, .underline, .leftline, .rightline{
+    position: absolute;
+    background-color: var(--dark-col2);
+    transition: 0.3s;
+}
+.topline, .underline{
+    width: 0;
+    height: 2px;
+}
+.leftline, .rightline{
+    height: 0;
+    width: 2px;
+}
+.topline{
+    top: 0;
+    right: 0;
+}
+.underline{
+    left: 0;
+    bottom: 0;
+}
+.leftline{
+    left: 0;
+    bottom: 0;
+}
+.rightline{
+    right: 0;
+    top: 0;
+}
+.nav-links:hover .underline, .nav-links:hover .topline{
+    width: 100%;
+}
+.nav-links:hover .leftline, .nav-links:hover .rightline{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* ----------------- Media Queries ----------------- */
+/* @media screen and ( min-width : 768px) { */
+/* @media all and ( min-width : 768px) { */
+@media (min-width : 768px) {
+    .bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+        gap: 1rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
