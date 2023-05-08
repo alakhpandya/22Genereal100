@@ -16,7 +16,7 @@ font-family: 'Sofia Sans Condensed', sans-serif;
     --normal-fonts: 'Kanit', sans-serif;
     --dark-col1: #3C486B;
     --dark-col2: #F45050;
-    --light-col1: #F0F0F0;
+    --light-col1: #E0E0E0;
     --light-col2: #F9D949;
 }
 
@@ -114,10 +114,81 @@ nav{
 }
 
 
+/* ----------------- Form ----------------- */
+.form-container{
+    background-color: var(--dark-col1);
+    border-radius: 20px;
+    margin: 3rem auto;
+    width: 90%;
+    padding: 2rem 1rem 1rem;
+    color: var(--light-col1);
+}
 
+.login-signup-form{
+    border: solid;
+    border-radius: 20px;
+    padding: 3rem 1.5rem 1rem;
+    position: relative;
+}
+.form-title{
+    /* border: solid; */
+    font-family: var(--title-fonts);
+    font-size: 2.3rem;
+    font-weight: 700;
+    position: absolute;
+    top: -0;
+    left: 13px;
+    transform: translateY(-55%);
+    background-color: var(--dark-col1);
+    padding: 0 2px;
+}
 
+.input-box{
+    /* border: solid; */
+    position: relative;
+    margin-bottom: 1.5rem;
 
+}
+.input-box input{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--dark-col1);
+    border: none;
+    outline: none;
+    border-bottom: solid 1px var(--light-col2);
+    padding-left: 20px;
+    color: var(--light-col1);
+    font-size: 1.3rem;
+}
+.input-box input:focus, .input-box input:valid{
+    border: 1px solid var(--light-col2);
+    border-radius: 10px;
+}
 
+.input-box label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    transition: 0.25s;
+}
+
+.input-box .eye-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+input:focus + label, input:valid + label{
+    top: 0;
+    left: 10px;
+    transform: translateY(-55%);
+    background-color: var(--dark-col1);
+    padding: 0 2px;
+    font-size: 1rem;
+}
 
 
 
