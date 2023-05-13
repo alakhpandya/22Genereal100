@@ -14,7 +14,11 @@
 
     <title>Royal | Signup</title>
 </head>
-
+<style>
+    .form-container{
+        max-width: 700px;
+    }
+</style>
 <body>
     <nav>
         <div class="upper-nav">
@@ -67,46 +71,50 @@
                 </a>
             </li>
         </ul>
-    </nav> 
+    </nav>
 
     <div class="form-container">
         <form class="login-signup-form" action="">
             <p class="form-title">Create Account</p>
-            <div class="input-box">
-                <input required type="text" name="" id="">
-                <label for="">Name</label>
+            <div class="signup-responsive">
+                <div>
+                    <div class="input-box">
+                        <input required type="text" name="" id="">
+                        <label for="">Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input required type="text" name="" id="">
+                        <label for="">Mobile</label>
+                    </div>
+                    <div class="input-box">
+                        <select name="" id="">
+                            <option selected value="">Qualification</option>
+                            <option value="">Under 10th</option>
+                            <option value="">SSC</option>
+                            <option value="">HSC</option>
+                            <option value="">Graduate</option>
+                            <option value="">Master</option>
+                            <option value="">PhD</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="input-box">
+                        <input required type="text" name="" id="">
+                        <label for="">E-mail</label>
+                    </div>
+                    <div class="input-box">
+                        <input required type="password" name="" id="">
+                        <label for="">Password</label>
+                        <i class="fa-solid fa-eye eye-icon"></i>
+                    </div>
+                    <div class="input-box">
+                        <input required type="password" name="" id="">
+                        <label for="">Confirm Password</label>
+                        <i class="fa-solid fa-eye eye-icon"></i>
+                    </div>
+                </div>
             </div>
-            <div class="input-box">
-                <input required type="text" name="" id="">
-                <label for="">Mobile</label>
-            </div>
-            <div class="input-box">
-                <select name="" id="">
-                    <option selected value="">Qualification</option>
-                    <option value="">Under 10th</option>
-                    <option value="">SSC</option>
-                    <option value="">HSC</option>
-                    <option value="">Graduate</option>
-                    <option value="">Master</option>
-                    <option value="">PhD</option>
-                </select>
-            </div>
-
-            <div class="input-box">
-                <input required type="text" name="" id="">
-                <label for="">E-mail</label>
-            </div>
-            <div class="input-box">
-                <input required type="password" name="" id="">
-                <label for="">Password</label>
-                <i class="fa-solid fa-eye eye-icon"></i>
-            </div>
-            <div class="input-box">
-                <input required type="password" name="" id="">
-                <label for="">Confirm Password</label>
-                <i class="fa-solid fa-eye eye-icon"></i>
-            </div>
-            
             <div class="gender-box">
                 <div>
                     <input type="radio" name="gender" id="female">
@@ -123,13 +131,13 @@
             </div>
 
             <!-- Add terms & condition checkbox & Send me the latest offers on whatsapp checkbox here -->
-            
+
             <div class="submit-box">
                 <input type="submit" value="Register" class="submit-btn">
             </div>
             <span>Have an account? <a href="login.html" class="site-link">Login here</a></span>
         </form>
     </div>
-</body> 
+</body>
 
 </html>

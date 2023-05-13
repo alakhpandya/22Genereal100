@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&family=Sofia+Sans+Condensed:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;700&family=Ubuntu:wght@400;500&display=swap');
 
 /* 
 font-family: 'Kanit', sans-serif;
 font-family: 'Sofia Sans Condensed', sans-serif;
+
+font-family: 'Rajdhani', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 */
 
 *{
@@ -12,12 +16,13 @@ font-family: 'Sofia Sans Condensed', sans-serif;
 }
 
 :root{
-    --title-fonts: 'Sofia Sans Condensed', sans-serif;
-    --normal-fonts: 'Kanit', sans-serif;
-    --dark-col1: #3C486B;
-    --dark-col2: #F45050;
-    --light-col1: #E0E0E0;
-    --light-col2: #F9D949;
+    /* --title-fonts: 'Sofia Sans Condensed', sans-serif; */
+    --title-fonts: 'Rajdhani', sans-serif;
+    --normal-fonts: 'Ubuntu', sans-serif;
+    --dark-col1: #000;
+    --dark-col2: #00C9C8;
+    --light-col1: #FFE3F1;
+    --light-col2: #EC87E4;
 }
 
 /* ----------------- Global Classes ----------------- */
@@ -260,5 +265,10 @@ input:focus + label, input:valid + label{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .signup-responsive{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
     }
 }
