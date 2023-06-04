@@ -1,0 +1,84 @@
+@import url('fonts.css');
+
+/* ------------------ CSS Reset ------------------ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ Variables ------------------ */
+:root{
+    --primary-fonts: Abel, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --secondary-fonts: "Lexend Deca", cursive;
+    --headline-fonts: Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    --btn-fonts: Livvic, sans-serif;
+    
+    --white: #ffffff;
+    --text-light: rgba(104, 102, 102, 0.855);
+    --text-dark: #3f4954;
+    --dark-bg: #0f0f0f;
+    --black: #000000;
+
+    --nav-hover: #104f55;
+    --gradient: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+/* ------------------ Global Classes ------------------ */
+body{
+    font-family: var(--primary-fonts);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+
+/* ------------------ Navbar ------------------ */
+nav{
+    background-color: blanchedalmond;
+    padding: 0 25px;
+    height: 5rem;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.show-nav{
+    height: 28rem;
+}
+nav a{
+    color: var(--text-dark);
+}
+
+.upper-nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-logo{
+    font-family: var(--secondary-fonts);
+}
+
+.nav-menu{
+    padding: 0 3rem;
+}
+.nav-menu li{
+    padding: 1rem 0;
+}
+.nav-link{
+    font-size: 1.1rem;
+}
+
+.social{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+.social-icon{
+    font-size: 1.2rem;
+}
