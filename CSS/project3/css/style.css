@@ -9,7 +9,7 @@
 
 /* ------------------ Variables ------------------ */
 :root{
-    --primary-fonts: Abel, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-fonts: "Royal Primary Fonts", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --secondary-fonts: "Lexend Deca", cursive;
     --headline-fonts: Anton, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     --btn-fonts: Livvic, sans-serif;
@@ -70,8 +70,15 @@ nav a{
 .nav-menu li{
     padding: 1rem 0;
 }
+.nav-menu li:hover{
+    background-color: var(--nav-hover);
+}
+
 .nav-link{
     font-size: 1.1rem;
+}
+.nav-menu li:hover .nav-link{
+    color: var(--white);
 }
 
 .social{
@@ -81,4 +88,80 @@ nav a{
 }
 .social-icon{
     font-size: 1.2rem;
+}
+
+/* ------------------ Banner ------------------ */
+.banner{
+    height: 40rem;
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+    text-align: center;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/assets/pexels-deva-darshan.jpg') top left/1100px no-repeat;
+    z-index: -1;
+}
+
+.banner h2{
+    font-family: var(--primary-fonts);
+    font-size: 1.3rem;
+    margin-top: 10rem;
+}
+.banner h3{
+    font-size: ;
+}
+
+#wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 1000px;
+    width: 100%;
+}
+
+
+/* ------------------ Media Queries ------------------ */
+
+@media (min-width: 768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bar-icon{
+        display: none;
+    }
+    .nav-menu{
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .nav-menu li{
+        height: 100%;
+        padding: 1.8rem 1rem 0;
+    }    
+}
+
+@media (min-width: 1000px){
+    .banner::before{
+        background-size: 100vw;
+    }
+}
+
+@media (min-width: 1200px){
+    #wave{
+        bottom: -60px;
+    }
+}
+
+@media (min-width: 1400px){
+    #wave{
+        bottom: -120px;
+    }
 }
