@@ -218,7 +218,73 @@ main{
     margin: 2rem 0;
 }
 
+/* ------------------ Sidebar ------------------ */
 aside{
+    margin: 5rem 0;
+}
+
+/* ------------------ Sidebar:Category ------------------ */
+.sidebar-section{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10rem;
+}
+.sidebar-title{
+    font-family: var(--secondary-fonts);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.sidebar-item-container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.category-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+/* ------------------ Sidebar:Popular Post ------------------ */
+.popular-post{
+    margin-bottom: 4rem;
+}
+.popular-post-img{
+    width: 100%;
+}
+.popular-post-headline{
+    font-family: var(--headline-fonts);
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* ------------------ Sidebar:Newsletter ------------------ */
+.newsletter-input-box{
+    margin-bottom: 1.5rem;
+}
+.newsletter-input{
+    width: 100%;
+    height: 3rem;
+}
+.newsletter-input-box .newsletter-input{
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+.newsletter-btn{
+    border: none;
+    font-size: 1.2rem;
+}
+
+
+
+.popular-tags{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.popular-post-btn{
+    padding: 0.5rem 1rem;
 }
 
 /* ------------------ Media Queries ------------------ */
